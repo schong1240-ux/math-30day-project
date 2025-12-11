@@ -10,6 +10,15 @@ function App() {
   const [records, setRecords] = useState({})
   const [checklists, setChecklists] = useState({})
 
+  // 데이터 로드 확인
+  if (!programData || programData.length === 0) {
+    return (
+      <div className="App" style={{ padding: '2rem', textAlign: 'center', color: 'white' }}>
+        <h1>데이터를 불러오는 중...</h1>
+      </div>
+    )
+  }
+
   // 로컬 스토리지에서 데이터 불러오기
   useEffect(() => {
     const savedRecords = localStorage.getItem('math30day-records')
@@ -70,6 +79,16 @@ function App() {
 
   if (selectedDay) {
     const dayData = programData.find(d => d.day === selectedDay)
+    if (!dayData) {
+      return (
+        <div className="App" style={{ padding: '2rem', textAlign: 'center', color: 'white' }}>
+          <h1>Day {selectedDay} 데이터를 찾을 수 없습니다.</h1>
+          <button onClick={() => setSelectedDay(null)} style={{ marginTop: '1rem', padding: '0.5rem 1rem' }}>
+            목록으로 돌아가기
+          </button>
+        </div>
+      )
+    }
     return (
       <DayDetail
         dayData={dayData}
