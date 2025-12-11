@@ -1,0 +1,230 @@
+.day-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+}
+
+.back-button {
+  background: white;
+  border: 2px solid #667eea;
+  color: #667eea;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: #667eea;
+  color: white;
+  transform: translateX(-4px);
+}
+
+.detail-header {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.detail-day-number {
+  font-size: 1rem;
+  color: #667eea;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.detail-title {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.detail-section {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 1.3rem;
+  color: #667eea;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0.75rem;
+}
+
+.point-box {
+  background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #667eea;
+}
+
+.point-text {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+}
+
+.point-text:last-child {
+  margin-bottom: 0;
+}
+
+.guide-list {
+  list-style: none;
+  padding: 0;
+}
+
+.guide-item {
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 3px solid #667eea;
+  line-height: 1.6;
+  color: #333;
+}
+
+.guide-item:last-child {
+  margin-bottom: 0;
+}
+
+.example-box {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.example-child,
+.example-parent {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+}
+
+.example-child:last-child,
+.example-parent:last-child {
+  margin-bottom: 0;
+}
+
+.example-label {
+  font-weight: 700;
+  color: #667eea;
+  margin-right: 0.5rem;
+}
+
+.example-text {
+  color: #333;
+  line-height: 1.6;
+}
+
+.records-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.record-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.record-label {
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+}
+
+.record-input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+.record-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.checklist-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.checklist-item:hover {
+  background: #e9ecef;
+}
+
+.checklist-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.checklist-text {
+  flex: 1;
+  line-height: 1.6;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.checklist-text.checked {
+  text-decoration: line-through;
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  .day-detail {
+    padding: 1rem 0.5rem;
+  }
+  
+  .detail-header {
+    padding: 1.5rem;
+  }
+  
+  .detail-title {
+    font-size: 1.4rem;
+  }
+  
+  .detail-section {
+    padding: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.1rem;
+  }
+}
+
