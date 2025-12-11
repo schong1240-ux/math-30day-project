@@ -2,6 +2,10 @@
 
 부모와 아이가 함께하는 30일 수학 학습 프로그램을 위한 웹 앱입니다.
 
+## 🌐 온라인 데모
+
+**https://schong1240-ux.github.io/math-30day-project/**
+
 ## 기능
 
 - 📅 30일 동안의 체계적인 수학 학습 프로그램
@@ -31,6 +35,8 @@ npm run dev
 ```bash
 npm run build
 ```
+
+빌드된 파일은 `dist` 폴더에 생성됩니다.
 
 ### 미리보기
 
@@ -64,6 +70,22 @@ npm run preview
 - 모든 기록과 체크리스트는 로컬 스토리지에 자동 저장됩니다.
 - 브라우저를 닫았다가 다시 열어도 데이터가 유지됩니다.
 
+## GitHub Pages 배포
+
+이 프로젝트는 GitHub Actions를 통해 자동으로 GitHub Pages에 배포됩니다.
+
+### 배포 설정 확인
+
+1. GitHub 저장소 → **Settings** → **Pages**
+2. **Source**를 **"GitHub Actions"**로 선택
+3. 저장
+
+### 배포 확인
+
+- `main` 브랜치에 푸시할 때마다 자동으로 빌드 및 배포됩니다.
+- **Actions** 탭에서 배포 상태를 확인할 수 있습니다.
+- 배포가 완료되면 몇 분 후 사이트가 업데이트됩니다.
+
 ## 기술 스택
 
 - React 18
@@ -73,4 +95,3 @@ npm run preview
 ## 라이선스
 
 ISC
-
